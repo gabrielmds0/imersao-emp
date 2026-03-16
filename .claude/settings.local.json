@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cursos.ibmec.br)",
+      "WebFetch(domain:www.masterclass.com)",
+      "WebFetch(domain:workshop.orbyka.com)",
+      "WebFetch(domain:www.facelessniches.com)",
+      "WebFetch(domain:www.learnfacelessyt.com)",
+      "Bash(find 'c:\\\\Users\\\\Melo\\\\Documents\\\\Páginas\\\\FPG\\\\FPG LANÇAMENTO\\\\formacao-paciente-grave-lancamento\\\\src' -type f -name *)",
+      "Bash(find c:UsersMeloDocumentsPáginasFPGFPGformacao-paciente-gravepublicimages -type f -name *)",
+      "Bash(python -c \":*)",
+      "Bash(npm create:*)",
+      "Bash(mkdir -p src)",
+      "Bash(npm init:*)",
+      "Bash(npx vite:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where node.exe)",
+      "Bash(where npm.cmd)",
+      "Bash(find src:*)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(where pdftotext:*)",
+      "Bash(python -c \"import fitz; doc=fitz.open\\(r''C:\\\\Users\\\\Melo\\\\Documents\\\\Projetos\\\\Pessoal\\\\Business\\\\Channels\\\\imersao-emp\\\\data\\\\2.1. [Channels][Lancamento Pago] Copy LP Vendas.pdf''\\); [print\\(f''--- PAGE {i+1} ---\\\\n{p.get_text\\(\\)}''\\) for i,p in enumerate\\(doc\\)]\")",
+      "Bash(rembg i:*)",
+      "Bash(python -c \"from PIL import Image; img = Image.open\\(''assets/dia1.png''\\); img.save\\(''public/dia1.webp'', ''WEBP'', quality=85\\); print\\(f''Converted: {img.size}''\\)\")"
+    ]
+  }
+}
