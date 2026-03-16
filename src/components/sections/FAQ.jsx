@@ -4,7 +4,7 @@ import ScrollReveal from '../ui/ScrollReveal'
 
 export default function FAQ() {
   return (
-    <section className="py-24 md:py-32 bg-surface">
+    <section id="faq" className="py-24 md:py-32 bg-surface">
       <div className="max-w-3xl mx-auto px-6">
         <ScrollReveal>
           <p className="text-accent text-sm font-medium uppercase tracking-widest text-center mb-4">FAQ</p>

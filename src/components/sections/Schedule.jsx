@@ -43,6 +43,7 @@ export default function Schedule() {
                           alt={day.title}
                           className="w-full h-full object-cover"
                           style={{ objectPosition: day.imagePosition || 'top' }}
+                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-base/90 via-base/30 to-transparent" />
                       </div>

@@ -3,7 +3,7 @@ import ScrollReveal from '../ui/ScrollReveal'
 
 export default function Guarantee() {
   return (
-    <section className="py-16 md:py-20 bg-surface relative overflow-hidden">
+    <section id="guarantee" className="py-16 md:py-20 bg-surface relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-accent/4 rounded-full blur-3xl" />
 
       <div className="max-w-3xl mx-auto px-6 relative z-10">

@@ -21,6 +21,7 @@ export default function Bio() {
             src={bio.image}
             alt={bio.name}
             className="w-full h-[400px] object-cover object-top"
+            loading="lazy"
           />
           {/* Gradient fade into content below */}
           <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent" />

@@ -133,10 +133,10 @@ export const results = {
   headline: 'Conheça alguns dos resultados dos nossos alunos',
   subheadline: 'A Channels Educação possui mais de 21.000 alunos. Para ser o próximo a ter esses resultados, clique no botão abaixo.',
   items: [
-    { name: 'Tiago S.', value: 'R$ 42.954,02', image: '/01-resultado-resultado-tiago.png' },
-    { name: 'Vinicius', value: 'R$ 54 mil', image: '/02-resultado-resultado-vinicius.png' },
-    { name: 'Andre', value: '', image: '/03-resultado-resultado-andre.png' },
-    { name: 'Lucas', value: '', image: '/04-resultado-resultado-lucas.png' },
+    { name: 'Tiago S.', value: 'R$ 42.954,02', image: '/01-resultado-resultado-tiago.webp' },
+    { name: 'Vinicius', value: 'R$ 54 mil', image: '/02-resultado-resultado-vinicius.webp' },
+    { name: 'Andre', value: '', image: '/03-resultado-resultado-andre.webp' },
+    { name: 'Lucas', value: '', image: '/04-resultado-resultado-lucas.webp' },
   ],
 }
 

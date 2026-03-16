@@ -20,7 +20,7 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <img
-          src="/logo-imersao-para-empresarios.png"
+          src="/logo-imersao-para-empresarios.webp"
           alt="Imersão para Empresários"
           className="h-10 w-auto"
         />

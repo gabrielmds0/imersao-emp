@@ -50,10 +50,7 @@ export default function ForWho() {
       <div className="relative z-10 max-w-5xl mx-auto px-6">
         <ScrollReveal>
           <div className="flex flex-col items-center mb-16">
-            <div className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-6">
-              <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
-              <span className="text-accent text-xs font-semibold uppercase tracking-widest">Publico-alvo</span>
-            </div>
+           
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-white text-center tracking-tight">
               {forWho.headline}
             </h2>

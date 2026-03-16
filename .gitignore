@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Debug / Reports
+lighthouse-report.json
+*.log
+npm-debug.log*
+
+# Claude local settings
+.claude/settings.local.json
+
+# Source images (originals kept in assets/)
+assets/
