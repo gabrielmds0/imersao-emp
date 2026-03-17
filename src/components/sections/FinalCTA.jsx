@@ -68,7 +68,7 @@ export default function FinalCTA({ onCtaClick }) {
         </ScrollReveal>
 
         <ScrollReveal delay={0.35}>
-          <Button glow red className="text-base md:text-xl !py-4 md:!py-5 !px-8 md:!px-14 w-full sm:w-auto uppercase font-bold tracking-wide" onClick={onCtaClick}>
+          <Button glow red icon={false} className="text-base md:text-xl !py-4 md:!py-5 !px-8 md:!px-14 w-full sm:w-auto uppercase font-bold tracking-wide" onClick={onCtaClick}>
             {finalCta.cta}
           </Button>
 
