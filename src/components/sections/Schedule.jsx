@@ -107,7 +107,7 @@ export default function Schedule() {
 
         <ScrollReveal>
           <div className="text-center">
-            <Button glow scrollTo="bio">{hero.cta}</Button>
+            <Button glow scrollTo="offer">{hero.cta}</Button>
           </div>
         </ScrollReveal>
       </div>

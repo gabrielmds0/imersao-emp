@@ -108,7 +108,7 @@ export default function ForWho() {
             <p className="text-xl md:text-2xl font-heading font-bold text-accent mb-10">
               {forWho.subheadline2}
             </p>
-            <Button glow scrollTo="opportunity">{hero.cta}</Button>
+            <Button glow scrollTo="offer">{hero.cta}</Button>
           </div>
         </ScrollReveal>
       </div>

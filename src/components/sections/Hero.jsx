@@ -93,7 +93,7 @@ export default function Hero() {
               {/* CTA */}
               <ScrollReveal delay={0.35}>
                 <div className="flex flex-col items-start gap-5">
-                  <Button glow scrollTo="for-who" className="w-full sm:w-auto whitespace-nowrap">
+                  <Button glow scrollTo="offer" className="w-full sm:w-auto whitespace-nowrap">
                     {hero.cta}
                   </Button>
                   <ProgressBar percent={hero.vacancyPercent} />

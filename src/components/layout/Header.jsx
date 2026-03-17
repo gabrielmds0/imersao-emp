@@ -24,7 +24,7 @@ export default function Header() {
           alt="Imersão para Empresários"
           className="h-10 w-auto"
         />
-        <Button variant="primary" icon={false} scrollTo="for-who" className="!py-2.5 !px-6 !text-sm !rounded-lg">
+        <Button variant="primary" icon={false} scrollTo="offer" className="!py-2.5 !px-6 !text-sm !rounded-lg">
           Garantir vaga
         </Button>
       </div>

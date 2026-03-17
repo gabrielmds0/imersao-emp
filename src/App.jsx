@@ -29,7 +29,7 @@ export default function App() {
         <Results />
         <Offer onCtaClick={openModal} />
         <Guarantee />
-        <FinalCTA onCtaClick={openModal} />
+        <FinalCTA />
         <FAQ />
       </main>
       <Footer />

@@ -137,7 +137,7 @@ export default function Opportunity() {
             <p className="text-xl md:text-2xl font-heading font-bold text-accent mb-10">
               {opportunity.subheadline2}
             </p>
-            <Button glow scrollTo="schedule">{hero.cta}</Button>
+            <Button glow scrollTo="offer">{hero.cta}</Button>
           </div>
         </ScrollReveal>
       </div>
