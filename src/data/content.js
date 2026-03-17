@@ -14,7 +14,7 @@ export const hero = {
     time: '19h',
     format: 'Ao vivo e Online',
   },
-  vacancyPercent: 67,
+  vacancyPercent: 83,
 }
 
 export const marqueeTestimonials = [
@@ -38,7 +38,7 @@ export const forWho = {
     },
     {
       iconKey: 'trending',
-      text: 'Empresários que sofrem com baixa margem de lucro e deseja um modelo com alto potencial de escala e margens muito mais altas.',
+      text: 'Empresários que sofrem com baixa margem de lucro e desejam um modelo com alto potencial de escala e margens muito mais altas.',
     },
     {
       iconKey: 'unlock',
@@ -114,12 +114,12 @@ export const schedule = {
 
 export const bio = {
   name: 'Cassiano Girardi',
-  image: '/bio-cassiano.webp',
+  image: '/cassiano-montagem.webp',
   stats: [
-    { value: 8, suffix: '+', label: 'anos de experiência' },
-    { value: 30, prefix: 'R$', suffix: 'M+', label: 'faturados' },
-    { value: 21, suffix: 'mil+', label: 'alunos' },
-    { value: 15, suffix: '+', label: 'países' },
+    { value: 8, prefix: '+', label: 'anos de experiência' },
+    { value: 30, prefix: '+R$', suffix: 'M', label: 'faturados' },
+    { value: 21, prefix: '+', suffix: 'mil', label: 'alunos' },
+    { value: 15, prefix: '+', label: 'países' },
   ],
   text: [
     '8 anos vivendo desse negócio. Mais de R$30 milhões faturados. Fundador da Channels Educação, a maior escola de monetização no YouTube do mundo, com mais de 21.000 alunos em mais de 15 países.',
@@ -141,7 +141,7 @@ export const results = {
 }
 
 export const offer = {
-  headline: 'Veja tudo o que você vai receber ao entrar para Imersão para Empresários:',
+  headline: 'Veja tudo o que você vai receber ao entrar na Imersão para Empresários:',
   price: 97,
   originalPrice: 297,
   badge: 'Lote 1',
@@ -181,9 +181,9 @@ export const faq = [
   { q: 'Preciso aparecer nos vídeos?', a: 'Não. Tudo que será ensinado na Imersão para Empresários se aplica a canais 100% anônimos, sem aparecer e sem usar sua voz.' },
   { q: 'Preciso saber inglês?', a: 'Não. Os conteúdos são produzidos com inteligência artificial em inglês, mas você não precisa falar nem escrever em inglês.' },
   { q: 'Quais são as datas e horários da Imersão para Empresários?', a: 'Os encontros acontecem nos dias 24, 25 e 26 de março, das 19h às 22h.' },
-  { q: 'E se eu não puder assistir à Imersão para Empresários ao vivo?', a: 'Você terá acesso à gravação completa por 7 dias após cada encontro. Mas recomendamos fortemente que participe ao vivo pra tirar suas dúvidas em tempo real.' },
+  { q: 'E se eu não puder assistir à Imersão para Empresários ao vivo?', a: 'Você terá acesso à gravação completa por 7 dias, após ela ser disponibilizada na área de membros. Mas recomendamos fortemente que participe ao vivo para tirar suas dúvidas em tempo real.' },
   { q: 'Quanto preciso investir pra montar esse modelo de negócio?', a: 'O investimento inicial é baixo. Durante a Imersão para Empresários, o Cassiano vai mostrar como começar gastando pouco e maximizando sua margem de lucro desde o início.' },
-  { q: 'Quem é Cassiano Girardi?', a: 'Pioneiro nesse modelo de negócios no Brasil, mais de R$30 milhões faturados em 8 anos e fundador da Channels Educação, a maior escola de monetização no YouTube do mundo, com 21.000+ alunos em mais de 15 países.' },
+  { q: 'Quem é Cassiano Girardi?', a: 'Pioneiro nesse modelo de negócios no Brasil, mais de R$30 milhões faturados em 8 anos e fundador da Channels Educação, a maior escola de monetização no YouTube do mundo, com mais de 21.000 alunos em mais de 15 países.' },
   { q: 'Quais são as formas de pagamento da Imersão para Empresários?', a: 'Você pode pagar via Pix à vista ou no cartão de crédito.' },
   { q: 'Como vou receber o acesso à Imersão para Empresários?', a: 'Após a compra, você receberá os dados de acesso por e-mail e WhatsApp antes do primeiro encontro.' },
 ]

@@ -19,7 +19,7 @@ export default function Offer() {
         <ScrollReveal delay={0.15}>
           <div className="relative">
             {/* Outer glow ring */}
-            <div className="absolute -inset-px rounded-3xl bg-gradient-to-b from-accent/30 via-accent/10 to-gold/20" />
+            <div className="absolute -inset-px rounded-3xl bg-gradient-to-b from-accent/30 via-accent/10 to-accent/20" />
 
             <div className="relative bg-surface rounded-3xl overflow-hidden">
               {/* Top section - Two columns on desktop */}
@@ -74,8 +74,8 @@ export default function Offer() {
               <div className="p-8 md:p-10 md:pt-8">
                 <div className="flex flex-col items-center gap-6">
                   {/* Badge */}
-                  <span className="inline-flex items-center gap-1.5 bg-gold/8 text-gold text-[11px] font-bold px-4 py-1.5 rounded-full border border-gold/15 uppercase tracking-wider">
-                    <span className="w-1.5 h-1.5 bg-gold rounded-full animate-pulse" />
+                  <span className="inline-flex items-center gap-1.5 bg-green/8 text-green text-[11px] font-bold px-4 py-1.5 rounded-full border border-green/15 uppercase tracking-wider">
+                    <span className="w-1.5 h-1.5 bg-green rounded-full" />
                     {offer.badge}
                   </span>
 
@@ -91,7 +91,7 @@ export default function Offer() {
                     </div>
 
                     <p className="text-5xl md:text-6xl font-heading font-extrabold text-white tracking-tight mt-1">
-                      R$ <span className="text-accent">{offer.price}</span>
+                      R$ <span className="text-green">{offer.price}</span>
                       <span className="text-xl text-white/30 font-semibold">,00</span>
                     </p>
                     <p className="text-white/20 text-xs mt-2 uppercase tracking-wider">pagamento único</p>
@@ -103,8 +103,8 @@ export default function Offer() {
                   </Button>
 
                   {/* Payment methods */}
-                  <div className="flex flex-col items-center gap-2">
-                    <div className="flex items-center gap-3 text-white/20 text-[11px]">
+                  <div className="flex flex-col items-center gap-2 w-full">
+                    <div className="flex items-center justify-center gap-3 text-white/20 text-[11px] w-full">
                       {offer.methods.map((m, i) => (
                         <span key={m} className="flex items-center gap-1.5">
                           {i > 0 && <span className="w-px h-3 bg-white/8 mr-1.5" />}
@@ -112,7 +112,7 @@ export default function Offer() {
                         </span>
                       ))}
                     </div>
-                    <p className="text-[11px] text-white/15 text-center">{offer.paymentNote}</p>
+                    <p className="text-[11px] text-white/15 text-center w-full">{offer.paymentNote}</p>
                   </div>
                 </div>
               </div>

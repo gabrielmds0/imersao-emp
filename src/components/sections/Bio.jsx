@@ -4,32 +4,42 @@ import ScrollReveal from '../ui/ScrollReveal'
 
 export default function Bio() {
   return (
-    <section id="bio" className="relative overflow-hidden">
-      {/* Desktop: Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
-        style={{ backgroundImage: `url(${bio.image})` }}
-      />
-      {/* Desktop overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-base/98 via-base/90 to-base/40 hidden md:block" />
-      <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-base/70 hidden md:block" />
-
-      <div className="relative z-10">
-        {/* Mobile: Image visible */}
-        <div className="md:hidden relative">
+    <section id="bio" className="relative overflow-hidden bg-base">
+      {/* Desktop: Full-bleed image pinned to the right */}
+      <div className="hidden md:block absolute inset-0">
+        <div className="absolute top-0 right-0 bottom-0 w-[55%]">
           <img
             src={bio.image}
             alt={bio.name}
-            className="w-full h-[400px] object-cover object-top"
+            className="w-full h-full object-cover object-top"
             loading="lazy"
           />
-          {/* Gradient fade into content below */}
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-base to-transparent" />
+          {/* Heavy gradient from left to blend into content */}
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/80 via-[25%] to-transparent" />
+          {/* Top fade */}
+          <div className="absolute inset-0 bg-gradient-to-b from-base via-transparent via-[15%] to-transparent" />
+          {/* Bottom fade */}
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent via-[10%] to-transparent" />
+          {/* Subtle overall darken so text overlay is readable */}
+          <div className="absolute inset-0 bg-base/20" />
         </div>
+      </div>
 
-        <div className="py-12 md:py-32 max-w-6xl mx-auto px-6 -mt-20 md:mt-0 relative z-10">
-          <div className="max-w-xl">
+      {/* Mobile: Image on top, full width */}
+      <div className="md:hidden relative">
+        <img
+          src={bio.image}
+          alt={bio.name}
+          className="w-full h-[420px] object-cover object-top"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 via-[40%] to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 -mt-16 md:mt-0">
+        <div className="md:min-h-[720px] md:flex md:items-center">
+          <div className="md:w-[55%] py-12 md:py-24">
             <ScrollReveal>
               <p className="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-4">Quem ensina</p>
             </ScrollReveal>
@@ -58,14 +68,16 @@ export default function Bio() {
 
             {bio.text.map((paragraph, i) => (
               <ScrollReveal key={i} delay={0.15 + i * 0.1}>
-                <p className="text-white/60 leading-relaxed mb-4 text-[15px]">{paragraph}</p>
+                <p className={`leading-relaxed mb-4 text-[15px] ${i >= 1 ? 'text-white/70 italic pl-4 border-l-2 border-accent/20' : 'text-white/60'}`}>
+                  {i === 1 ? `\u201C${paragraph}` : i === bio.text.length - 1 && i >= 1 ? `${paragraph}\u201D` : paragraph}
+                </p>
               </ScrollReveal>
             ))}
 
             <ScrollReveal delay={0.4}>
               <div className="mt-8 p-5 glass-card rounded-xl border-l-2 border-accent/50">
                 <p className="text-lg font-heading font-semibold text-white/90 italic">
-                  "{bio.closing}"
+                  &ldquo;{bio.closing}&rdquo;
                 </p>
               </div>
             </ScrollReveal>

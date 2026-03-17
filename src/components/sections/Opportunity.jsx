@@ -11,7 +11,7 @@ export default function Opportunity() {
         {/* Header */}
         <ScrollReveal>
           <p className="text-accent text-xs font-semibold uppercase tracking-[0.2em] text-center mb-4">O modelo</p>
-          <h2 className="text-2xl md:text-4xl font-heading font-bold text-white tracking-tight leading-tight mb-16 md:mb-20 text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-5xl font-heading font-bold text-white tracking-tight leading-tight mb-16 md:mb-20 text-center max-w-4xl mx-auto">
             {opportunity.headline}
           </h2>
         </ScrollReveal>
@@ -20,14 +20,14 @@ export default function Opportunity() {
         <div className="hidden md:block mb-20">
           <div className="relative grid grid-cols-5 gap-5" style={{ minHeight: '380px' }}>
             {/* Horizontal connecting line through middle */}
-            <div className="absolute left-[10%] right-[10%] top-1/2 h-px bg-gradient-to-r from-accent/25 via-accent/12 to-gold/25 -translate-y-1/2 z-0" />
+            <div className="absolute left-[10%] right-[10%] top-1/2 h-px bg-gradient-to-r from-accent/25 via-accent/12 to-green/25 -translate-y-1/2 z-0" />
 
             {opportunity.steps.map((step, i) => {
               const isUp = i % 2 === 0
               const isMoneyStep = i >= 3
-              const dotColor = isMoneyStep ? 'bg-gold' : 'bg-accent'
-              const dotRing = isMoneyStep ? 'ring-gold/20' : 'ring-accent/20'
-              const numColor = isMoneyStep ? 'text-gold/50' : 'text-accent/50'
+              const dotColor = isMoneyStep ? 'bg-green' : 'bg-accent'
+              const dotRing = isMoneyStep ? 'ring-green/20' : 'ring-accent/20'
+              const numColor = isMoneyStep ? 'text-green/50' : 'text-accent/50'
 
               return (
                 <ScrollReveal key={i} delay={i * 0.1}>
@@ -40,16 +40,16 @@ export default function Opportunity() {
                     {/* Card - above or below center */}
                     <div className={`group absolute left-0 right-0 ${isUp ? 'bottom-[54%]' : 'top-[54%]'}`}>
                       {/* Stem connector */}
-                      <div className={`absolute left-1/2 -translate-x-1/2 w-px h-4 ${isMoneyStep ? 'bg-gold/20' : 'bg-accent/20'} ${isUp ? 'bottom-0 translate-y-full' : 'top-0 -translate-y-full'}`} />
+                      <div className={`absolute left-1/2 -translate-x-1/2 w-px h-4 ${isMoneyStep ? 'bg-green/20' : 'bg-accent/20'} ${isUp ? 'bottom-0 translate-y-full' : 'top-0 -translate-y-full'}`} />
 
                       <div className="relative bg-surface/80 border border-white/[0.06] rounded-xl p-4 hover:border-white/[0.12] hover:bg-surface-2/80 transition-all duration-300 backdrop-blur-sm">
                         <span className={`text-[10px] font-mono ${numColor} tracking-wider uppercase block mb-1.5`}>
                           Passo {i + 1}
                         </span>
-                        <h4 className="font-heading font-semibold text-white text-[13px] mb-2 leading-snug">
+                        <h4 className="font-heading font-semibold text-white text-[15px] mb-2 leading-snug">
                           {step.title}
                         </h4>
-                        <p className="text-white/35 text-[12px] leading-relaxed group-hover:text-white/50 transition-colors">
+                        <p className="text-white/35 text-[13px] leading-relaxed group-hover:text-white/50 transition-colors">
                           {step.desc}
                         </p>
                       </div>
@@ -65,14 +65,14 @@ export default function Opportunity() {
         <div className="md:hidden mb-16">
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-accent/20 via-accent/10 to-gold/20" />
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-accent/20 via-accent/10 to-green/20" />
 
             <div className="space-y-6">
               {opportunity.steps.map((step, i) => {
                 const isMoneyStep = i >= 3
-                const dotColor = isMoneyStep ? 'bg-gold' : 'bg-accent'
+                const dotColor = isMoneyStep ? 'bg-green' : 'bg-accent'
                 const dotRing = isMoneyStep ? 'ring-gold/15' : 'ring-accent/15'
-                const numColor = isMoneyStep ? 'text-gold/50' : 'text-accent/50'
+                const numColor = isMoneyStep ? 'text-green/50' : 'text-accent/50'
                 return (
                   <ScrollReveal key={i} delay={i * 0.08}>
                     <div className="flex items-start gap-4">
@@ -104,7 +104,7 @@ export default function Opportunity() {
           <div className="relative mb-12">
             <div className="h-px bg-gradient-to-r from-transparent via-white/8 to-transparent" />
             <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bg-base px-5">
-              <span className="text-gold text-xs font-medium tracking-wide whitespace-nowrap">
+              <span className="text-accent text-xs font-medium tracking-wide whitespace-nowrap">
                 Onde entram os canais anônimos?
               </span>
             </div>
@@ -117,10 +117,10 @@ export default function Opportunity() {
             <ScrollReveal key={i} delay={i * 0.1}>
               <div className="group relative pl-5 py-4 pr-4 rounded-xl border border-white/[0.04] hover:border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.02] transition-all duration-300">
                 <div className="absolute left-0 top-4 bottom-4 w-[2px] rounded-full bg-accent/15 group-hover:bg-accent/40 transition-colors duration-300" />
-                <h4 className="font-heading font-semibold text-white text-sm mb-1.5 group-hover:text-accent-light transition-colors duration-300">
+                <h4 className="font-heading font-semibold text-white text-base mb-1.5 group-hover:text-accent-light transition-colors duration-300">
                   {item.title}
                 </h4>
-                <p className="text-white/35 text-[13px] leading-relaxed group-hover:text-white/50 transition-colors duration-300">
+                <p className="text-white/35 text-sm leading-relaxed group-hover:text-white/50 transition-colors duration-300">
                   {item.desc}
                 </p>
               </div>
@@ -131,7 +131,7 @@ export default function Opportunity() {
         {/* Closing */}
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-base md:text-lg text-white/40 mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-base md:text-xl text-white/40 mb-8 max-w-2xl mx-auto leading-relaxed">
               {opportunity.subheadline}
             </p>
             <Button glow scrollTo="schedule">{hero.cta}</Button>

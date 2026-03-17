@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+/* Helvetica Now Display - Headings */
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/HelveticaNowDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/HelveticaNowDisplay-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-base: #050508;
   --color-surface: #0a0a0f;
@@ -15,11 +38,14 @@
   --color-gold: #C8A44E;
   --color-gold-dark: #a88a3e;
   --color-gold-glow: #C8A44E25;
+  --color-green: #22c55e;
+  --color-green-dark: #16a34a;
+  --color-green-glow: #22c55e30;
   --color-crimson: #E8475F;
   --color-muted: #555566;
   --color-subtle: #888899;
 
-  --font-heading: 'Outfit', sans-serif;
+  --font-heading: 'Helvetica Now Display', 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -72,10 +98,10 @@ html {
 
 @keyframes glow-pulse {
   0%, 100% {
-    box-shadow: 0 0 20px #4361EE25, 0 0 60px #4361EE10, inset 0 1px 0 #ffffff15;
+    box-shadow: 0 0 20px #22c55e25, 0 0 60px #22c55e10, inset 0 1px 0 #ffffff15;
   }
   50% {
-    box-shadow: 0 0 35px #4361EE45, 0 0 90px #4361EE20, inset 0 1px 0 #ffffff20;
+    box-shadow: 0 0 35px #22c55e45, 0 0 90px #22c55e20, inset 0 1px 0 #ffffff20;
   }
 }
 .animate-glow-pulse {

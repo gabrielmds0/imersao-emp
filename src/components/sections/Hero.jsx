@@ -39,7 +39,7 @@ export default function Hero() {
               {/* Event info */}
               <ScrollReveal>
                 <div className="flex items-center gap-3 mb-6 lg:mb-8">
-                  <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
+                  <span className="w-1.5 h-1.5 bg-accent rounded-full" />
                   <span className="text-accent text-sm font-medium tracking-wide">
                     {hero.event.dates} às {hero.event.time}
                   </span>

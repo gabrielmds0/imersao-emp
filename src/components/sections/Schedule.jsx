@@ -4,8 +4,8 @@ import ScrollReveal from '../ui/ScrollReveal'
 
 const dayThemes = [
   { label: 'text-accent', bar: 'bg-accent', check: 'text-accent/40' },
-  { label: 'text-gold', bar: 'bg-gold', check: 'text-gold/40' },
-  { label: 'text-crimson', bar: 'bg-crimson', check: 'text-crimson/40' },
+  { label: 'text-accent', bar: 'bg-accent', check: 'text-accent/40' },
+  { label: 'text-accent', bar: 'bg-accent', check: 'text-accent/40' },
 ]
 
 export default function Schedule() {
