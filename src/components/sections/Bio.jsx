@@ -41,7 +41,7 @@ export default function Bio() {
         <div className="md:min-h-[720px] md:flex md:items-center">
           <div className="md:w-[55%] py-12 md:py-24">
             <ScrollReveal>
-              <p className="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-4">Quem ensina</p>
+              <p className="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-4">Com quem você irá aprender</p>
             </ScrollReveal>
 
             <ScrollReveal>
@@ -68,8 +68,8 @@ export default function Bio() {
 
             {bio.text.map((paragraph, i) => (
               <ScrollReveal key={i} delay={0.15 + i * 0.1}>
-                <p className={`leading-relaxed mb-4 text-[15px] ${i >= 1 ? 'text-white/70 italic pl-4 border-l-2 border-accent/20' : 'text-white/60'}`}>
-                  {i === 1 ? `\u201C${paragraph}` : i === bio.text.length - 1 && i >= 1 ? `${paragraph}\u201D` : paragraph}
+                <p className="leading-relaxed mb-4 text-[15px] text-white/60">
+                  {paragraph}
                 </p>
               </ScrollReveal>
             ))}

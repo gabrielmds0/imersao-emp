@@ -11,6 +11,8 @@ import Guarantee from './components/sections/Guarantee'
 import FinalCTA from './components/sections/FinalCTA'
 import FAQ from './components/sections/FAQ'
 
+const openModal = () => window.openFormModal?.()
+
 export default function App() {
   return (
     <>
@@ -25,9 +27,9 @@ export default function App() {
         <Schedule />
         <Bio />
         <Results />
-        <Offer />
+        <Offer onCtaClick={openModal} />
         <Guarantee />
-        <FinalCTA />
+        <FinalCTA onCtaClick={openModal} />
         <FAQ />
       </main>
       <Footer />

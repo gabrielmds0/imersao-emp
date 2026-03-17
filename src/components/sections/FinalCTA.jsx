@@ -3,7 +3,7 @@ import Button from '../ui/Button'
 import ProgressBar from '../ui/ProgressBar'
 import ScrollReveal from '../ui/ScrollReveal'
 
-export default function FinalCTA() {
+export default function FinalCTA({ onCtaClick }) {
   return (
     <section id="final-cta" className="py-24 md:py-32 bg-base relative overflow-hidden">
       {/* Ambient glow */}
@@ -31,15 +31,44 @@ export default function FinalCTA() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.25}>
-          <div className="text-white/45 text-base md:text-lg leading-relaxed mb-10 space-y-0.5">
-            {finalCta.details.map((line, i) => (
-              <p key={i}>{line}</p>
-            ))}
+          <div className="flex flex-col items-center gap-3 mb-10">
+            {/* Date */}
+            <div className="flex items-center gap-2.5 text-white/45 text-base md:text-lg">
+              <svg className="w-5 h-5 text-accent/60 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg>
+              <span>{finalCta.details[0]}</span>
+            </div>
+            {/* Time */}
+            <div className="flex items-center gap-2.5 text-white/45 text-base md:text-lg">
+              <svg className="w-5 h-5 text-accent/60 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              <span>{finalCta.details[1]}</span>
+            </div>
+            {/* Online */}
+            <div className="flex items-center gap-2.5 text-white/45 text-base md:text-lg">
+              <svg className="w-5 h-5 text-accent/60 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14" />
+                <rect x="1" y="6" width="14" height="12" rx="2" />
+              </svg>
+              <span>{finalCta.details[2]}</span>
+            </div>
+            {/* Cassiano */}
+            <div className="flex items-center gap-2.5 text-white/45 text-base md:text-lg">
+              <svg className="w-5 h-5 text-accent/60 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <span>{finalCta.details[3]}</span>
+            </div>
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={0.35}>
-          <Button glow className="text-base md:text-xl !py-4 md:!py-5 !px-8 md:!px-14 w-full sm:w-auto uppercase font-bold tracking-wide">
+          <Button glow red className="text-base md:text-xl !py-4 md:!py-5 !px-8 md:!px-14 w-full sm:w-auto uppercase font-bold tracking-wide" onClick={onCtaClick}>
             {finalCta.cta}
           </Button>
 

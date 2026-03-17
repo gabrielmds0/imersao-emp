@@ -1,6 +1,6 @@
 import { KIWIFY_URL } from '../../data/content'
 
-export default function Button({ children, variant = 'primary', className = '', href, onClick, glow = false, icon = true, scrollTo }) {
+export default function Button({ children, variant = 'primary', className = '', href, onClick, glow = false, icon = true, scrollTo, red = false }) {
   const isExternal = href || (!onClick && !scrollTo)
   const Tag = isExternal ? 'a' : 'button'
   const linkProps = Tag === 'a' ? { href: href || KIWIFY_URL, target: href ? undefined : '_blank', rel: href ? undefined : 'noopener noreferrer' } : {}
@@ -45,7 +45,7 @@ export default function Button({ children, variant = 'primary', className = '', 
       className={`group relative inline-flex items-center justify-center gap-2.5 font-heading font-bold text-white rounded-xl px-8 py-4 text-lg tracking-wide cursor-pointer transition-all duration-300 active:scale-[0.97] overflow-hidden whitespace-nowrap ${className}`}
     >
       {/* Background layers */}
-      <span className="absolute inset-0 bg-green rounded-xl" />
+      <span className={`absolute inset-0 ${red ? 'bg-red-600' : 'bg-green'} rounded-xl`} />
       <span className="absolute inset-0 bg-gradient-to-b from-white/[0.08] to-transparent rounded-xl" />
 
       {/* Hover sweep */}
@@ -56,7 +56,7 @@ export default function Button({ children, variant = 'primary', className = '', 
 
       {/* Glow */}
       {glow && (
-        <span className="absolute -inset-1 bg-green/20 rounded-2xl blur-xl animate-glow-pulse -z-10" />
+        <span className={`absolute -inset-1 ${red ? 'bg-red-600/20' : 'bg-green/20'} rounded-2xl blur-xl animate-glow-pulse -z-10`} />
       )}
 
       {/* Content */}

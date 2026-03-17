@@ -84,7 +84,7 @@ export default function Results() {
 
         <ScrollReveal delay={0.05}>
           <p className="text-muted text-center mb-14 max-w-2xl mx-auto">
-            Resultados reais de alunos da Channels Educação
+            {results.subtitle}
           </p>
         </ScrollReveal>
 
@@ -92,14 +92,13 @@ export default function Results() {
         <ScrollReveal delay={0.1}>
           <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
             {[
-              { value: '21.000+', label: 'alunos' },
-              { value: '15+', label: 'países' },
-              { value: 'R$ 30M+', label: 'faturados por alunos' },
+              { value: '+ de 21.000', label: 'alunos' },
+              { value: '+ de 15', label: 'países' },
             ].map((stat, i) => (
               <div key={i} className="flex items-center gap-2 text-sm">
                 <span className="font-heading font-bold text-white">{stat.value}</span>
                 <span className="text-muted">{stat.label}</span>
-                {i < 2 && <span className="w-px h-4 bg-border ml-4" />}
+                {i < 1 && <span className="w-px h-4 bg-border ml-4" />}
               </div>
             ))}
           </div>
@@ -121,7 +120,8 @@ export default function Results() {
         {/* Bottom CTA */}
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-white/40 mb-8 max-w-xl mx-auto text-sm leading-relaxed">{results.subheadline}</p>
+            <p className="text-xl md:text-2xl font-heading font-medium text-white/70 mb-2 leading-snug">{results.subheadline1}</p>
+            <p className="text-xl md:text-2xl font-heading font-bold text-accent mb-10">{results.subheadline2}</p>
             <Button glow scrollTo="offer">{hero.cta}</Button>
           </div>
         </ScrollReveal>

@@ -2,12 +2,12 @@ export const KIWIFY_URL = 'https://pay.kiwify.com.br/lB4Bg9c'
 
 export const hero = {
   headline: 'Em 3 dias, você vai criar seu novo negócio digital que fatura em dólar.',
-  subheadline: 'Participe da imersão e construa um novo negócio capaz de gerar mais de R$ 50.000 todos os meses, através de canais anônimos no YouTube.',
+  subheadline: 'Participe da imersão e construa um novo negócio capaz de gerar mais de R$ 50.000 por mês através de Canais Anônimos no YouTube. Mesmo que você não entenda nada de YouTube ou do mercado digital. E o melhor:',
   cta: 'Garantir meu ingresso',
   bullets: [
-    'Mesmo que você não entenda nada de YouTube ou do digital',
     'Sem precisar aparecer',
-    'Mais de 90% de margem',
+    'Sem depender de funcionários',
+    'Com mais de 80% de margem',
   ],
   event: {
     dates: '24, 25 e 26 de Março',
@@ -30,45 +30,46 @@ export const forWho = {
   items: [
     {
       iconKey: 'briefcase',
-      text: 'Empresários que já faturam com seu negócio, mas querem construir uma nova fonte de renda em dólar.',
+      text: 'Empresários que já faturam com seus negócios, mas querem construir uma nova fonte de renda em dólar.',
     },
     {
       iconKey: 'cog',
-      text: 'Quem está cansado de ter funcionários, estrutura cara, e busca modelos de negócio mais enxutos e digitais.',
+      text: 'Quem está cansado de lidar com funcionários, estrutura cara e baixa margem, e busca modelos mais enxutos de negócio como no mercado digital.',
     },
     {
       iconKey: 'trending',
-      text: 'Empresários que sofrem com baixa margem de lucro e desejam um modelo com alto potencial de escala e margens muito mais altas.',
+      text: 'Empresários que sofrem com margens apertadas e desejam um modelo com alto potencial de escala e lucratividade.',
     },
     {
       iconKey: 'unlock',
-      text: 'Quem sente que o negócio depende demais da própria presença, e quer começar a construir ativos que possam gerar resultado sem exigir atenção constante.',
+      text: 'Quem sente que o negócio depende demais da própria presença e quer começar a construir ativos que possam gerem resultado sem exigir atenção constante.',
     },
   ],
-  subheadline: 'Empresários estão presos a negócios operacionais enquanto uma nova geração está construindo ativos digitais globais.',
+  subheadline: 'Hoje muitos empresários estão presos a negócios operacionais, enquanto uma nova geração está construindo ativos digitais globais.',
   subheadline2: 'E o YouTube é um dos mais poderosos deles.',
 }
 
 export const opportunity = {
-  headline: 'Como funciona a lógica do modelo de negócio de Canais Anônimos',
+  headline: 'Como funciona a lógica dos Canais Anônimos no YouTube',
   steps: [
-    { iconKey: 'monitor', title: 'Pessoas entram no YouTube', desc: 'Pessoas entram no YouTube para assistir vídeos.' },
+    { iconKey: 'monitor', title: 'Pessoas entram no YouTube', desc: 'Milhões de pessoas entram no YouTube todos os dias para assistir vídeos.' },
     { iconKey: 'target', title: 'Empresas pagam anúncios', desc: 'Empresas pagam para anunciar nesses vídeos.' },
-    { iconKey: 'cpu', title: 'Algoritmo entrega conteúdo', desc: 'O algoritmo entrega conteúdos que as pessoas querem assistir.' },
+    { iconKey: 'cpu', title: 'Algoritmo entrega conteúdo', desc: 'O algoritmo recomenda conteúdos que as pessoas querem assistir.' },
     { iconKey: 'chart', title: 'Canais geram visualizações', desc: 'Canais que geram visualizações exibem anúncios.' },
     { iconKey: 'dollar', title: 'YouTube divide a receita', desc: 'O YouTube divide a receita com o dono do canal.' },
   ],
   anonymous: [
-    { iconKey: 'film', title: 'Produção de vídeos sem aparecer', desc: 'Conteúdos produzidos com roteiro, narração e imagens \u2014 sem precisar mostrar rosto, tudo com IA.' },
-    { iconKey: 'share', title: 'Distribuição pelo algoritmo', desc: 'O YouTube recomenda os vídeos para pessoas interessadas naquele tema.' },
-    { iconKey: 'dollar', title: 'Monetização por visualizações em Dólar', desc: 'Quanto mais pessoas assistem, mais anúncios são exibidos e o YouTube te paga em dólar.' },
-    { iconKey: 'bank', title: 'Receita gerada para o canal', desc: 'Receita gerada para o canal direto na sua conta.' },
+    { iconKey: 'film', title: 'Produção de vídeos sem aparecer', desc: 'Conteúdos produzidos com roteiro, narração, vídeos e imagens, sem precisar mostrar o rosto. Tudo com apoio de inteligência artificial.' },
+    { iconKey: 'dollar', title: 'Monetização por visualizações em Dólar', desc: 'Quanto mais pessoas assistem, mais anúncios são exibidos e o YouTube paga em dólar.' },
+    { iconKey: 'bank', title: 'Receita direta para o canal', desc: 'A receita é gerada diretamente para o dono do canal.' },
   ],
-  subheadline: 'O YouTube paga bilhões de dólares por ano para criadores de conteúdo. E você não precisa mostrar seu rosto pra receber sua parte.',
+  subheadline1: 'O YouTube paga bilhões de dólares por ano para criadores de conteúdo.',
+  subheadline2: 'E você não precisa mostrar seu rosto para receber sua parte.',
 }
 
 export const schedule = {
   headline: 'Cronograma da Imersão',
+  subheadline: '3 dias que podem mudar a trajetória do seu novo negócio no digital',
   days: [
     {
       day: 'Dia 1',
@@ -77,10 +78,9 @@ export const schedule = {
       color: 'primary',
       image: '/dia1.webp',
       items: [
-        'O que é esse modelo e por que é o mais inteligente para gerar receita no YouTube hoje.',
-        'Como o YouTube paga e por que o faturamento vem em dólar.',
-        'Como escolher o nicho certo usando dados e não intuição.',
-        'Como começar gastando pouco e maximizar sua margem de lucro desde o primeiro vídeo.',
+        'O que é esse modelo e por que ele é um dos mais inteligentes para gerar receita no YouTube hoje.',
+        'Como escolher o nicho certo usando dados, e não intuição.',
+        'Como começar gastando pouco e maximizar sua margem de lucro desde o 1º dia.',
       ],
     },
     {
@@ -91,10 +91,7 @@ export const schedule = {
       image: '/cassiano-gui-office.webp',
       imagePosition: 'center 30%',
       items: [
-        'Como criar esse modelo seguindo os critérios de monetização do YouTube.',
-        'Como produzir conteúdo com inteligência artificial sem aparecer.',
-        'Como montar uma operação enxuta que roda com poucas horas por semana.',
-        'Os erros que são reprovados na monetização e como evitar todos eles.',
+        'Os erros que reprovam canais na monetização e como evitá-los.',
       ],
     },
     {
@@ -104,9 +101,10 @@ export const schedule = {
       color: 'success',
       image: '/dia3.webp',
       items: [
-        'Como construir múltiplos ativos.',
-        'Como montar um time pequeno que executa sem depender de você.',
-        'Como blindar sua operação para ter um negócio seguro e de longo prazo.',
+        'Como construir múltiplos ativos digitais.',
+        'Como montar um pequeno time que executa sem depender de você.',
+        'Como blindar sua operação para criar um negócio seguro e de longo prazo.',
+        'Os erros comuns na escala e blindagem e como evitar todos eles.',
       ],
     },
   ],
@@ -122,16 +120,18 @@ export const bio = {
     { value: 15, prefix: '+', label: 'países' },
   ],
   text: [
-    '8 anos vivendo desse negócio. Mais de R$30 milhões faturados. Fundador da Channels Educação, a maior escola de monetização no YouTube do mundo, com mais de 21.000 alunos em mais de 15 países.',
-    'Fui o primeiro brasileiro a trazer esse modelo de negócio para o Brasil, direto dos criadores americanos. Já estudei YouTube presencialmente com os maiores do mundo, incluindo 2 encontros com o TOP1: MrBeast nos Estados Unidos.',
-    'Hoje, acompanho de perto os maiores players do Brasil e do mundo. Sei o que funciona, sei o que quebra uma operação e sei exatamente o que alguém que está começando do zero precisa fazer pra construir um negócio sólido no YouTube.',
+    '8 anos vivendo de Canais Anônimos no YouTube com mais de R$30 milhões faturados. Fundador da Channels Educação, a maior escola de monetização no YouTube do mundo, com mais de 21.000 alunos em mais de 15 países.',
+    'Foi o primeiro brasileiro a trazer esse modelo de negócio para o Brasil, diretamente dos criadores americanos. Estudou YouTube presencialmente com alguns dos maiores especialistas do mundo, incluindo dois encontros com o TOP1: MrBeast nos Estados Unidos.',
+    'Hoje acompanha de perto os maiores players do Brasil e do mundo. Sabe o que funciona, o que quebra uma operação e sabe também exatamente o que alguém que está começando precisa fazer para construir um negócio sólido no YouTube.',
   ],
-  closing: 'Nesses 3 dias, vou te entregar o mapa que eu levei 8 anos para construir.',
+  closing: 'Nesses 3 dias, vou te entregar o mapa que levei 8 anos para construir.',
 }
 
 export const results = {
-  headline: 'Conheça alguns dos resultados dos nossos alunos',
-  subheadline: 'A Channels Educação possui mais de 21.000 alunos. Para ser o próximo a ter esses resultados, clique no botão abaixo.',
+  headline: 'Veja o resultado de alguns dos nossos alunos',
+  subtitle: 'Pessoas comuns decidiram construir um modelo de negócio no YouTube:',
+  subheadline1: 'A Channels Educação possui mais de 21.000 alunos.',
+  subheadline2: 'E você pode ser o próximo a ter resultados como esse.',
   items: [
     { name: 'Tiago S.', value: 'R$ 42.954,02', image: '/01-resultado-resultado-tiago.webp' },
     { name: 'Vinicius', value: 'R$ 54 mil', image: '/02-resultado-resultado-vinicius.webp' },
@@ -141,18 +141,19 @@ export const results = {
 }
 
 export const offer = {
-  headline: 'Veja tudo o que você vai receber ao entrar na Imersão para Empresários:',
+  sectionLabel: 'O que você vai receber',
+  headline: 'Veja tudo o que você vai receber ao entrar para Imersão para Empresários:',
   price: 97,
   originalPrice: 297,
   badge: 'Lote 1',
-  cta: 'Comprar Ingresso | Lote 1',
+  cta: 'Comprar Ingresso',
   days: [
     { day: 'DIA 01', date: 'Terça, 24/03 às 19h', title: 'O Modelo de Negócio' },
     { day: 'DIA 02', date: 'Quarta, 25/03 às 19h', title: 'A Construção' },
     { day: 'DIA 03', date: 'Quinta, 26/03 às 19h', title: 'Mindset da Escala' },
   ],
   methods: ['Pix', 'Cartão de Crédito', 'PayPal'],
-  paymentNote: 'Pagamento seguro processado pela Kiwify',
+  paymentNote: 'Pagamento seguro via Kiwify',
 }
 
 export const finalCta = {
@@ -171,7 +172,7 @@ export const finalCta = {
 
 export const guarantee = {
   headline: 'Risco Zero',
-  text: 'Você tem até 7 dias após a compra para pedir reembolso. Sem burocracia. Sem perguntas. Só pedir na plataforma.',
+  text: 'Você tem até 7 dias após a compra para pedir reembolso. Sem burocracia. Sem perguntas.',
 }
 
 export const faq = [

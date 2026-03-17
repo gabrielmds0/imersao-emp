@@ -1,8 +1,9 @@
-import { offer } from '../../data/content'
+import { offer, hero } from '../../data/content'
 import Button from '../ui/Button'
+import ProgressBar from '../ui/ProgressBar'
 import ScrollReveal from '../ui/ScrollReveal'
 
-export default function Offer() {
+export default function Offer({ onCtaClick }) {
   return (
     <section id="offer" className="py-20 md:py-32 bg-base relative overflow-hidden">
       {/* Ambient glows */}
@@ -11,6 +12,7 @@ export default function Offer() {
 
       <div className="relative z-10 max-w-3xl mx-auto px-6">
         <ScrollReveal>
+          <p className="text-accent text-xs font-semibold uppercase tracking-[0.2em] text-center mb-4">{offer.sectionLabel}</p>
           <h2 className="text-2xl md:text-4xl font-heading font-bold text-white text-center mb-12 md:mb-16 tracking-tight leading-snug">
             {offer.headline}
           </h2>
@@ -74,8 +76,8 @@ export default function Offer() {
               <div className="p-8 md:p-10 md:pt-8">
                 <div className="flex flex-col items-center gap-6">
                   {/* Badge */}
-                  <span className="inline-flex items-center gap-1.5 bg-green/8 text-green text-[11px] font-bold px-4 py-1.5 rounded-full border border-green/15 uppercase tracking-wider">
-                    <span className="w-1.5 h-1.5 bg-green rounded-full" />
+                  <span className="inline-flex items-center gap-1.5 bg-red-500/10 text-red-500 text-[11px] font-bold px-4 py-1.5 rounded-full border border-red-500/20 uppercase tracking-wider">
+                    <span className="w-1.5 h-1.5 bg-red-500 rounded-full" />
                     {offer.badge}
                   </span>
 
@@ -83,22 +85,23 @@ export default function Offer() {
                   <div className="text-center">
                     <div className="flex items-baseline gap-3 justify-center">
                       <p className="text-white/25 line-through text-base">
-                        R$ {offer.originalPrice},00
+                        de R$ {offer.originalPrice},00
                       </p>
-                      <svg className="w-4 h-4 text-white/10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M4 8h8M9 5l3 3-3 3" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                      <span className="text-white/30 text-sm">por apenas</span>
                     </div>
 
-                    <p className="text-5xl md:text-6xl font-heading font-extrabold text-white tracking-tight mt-1">
-                      R$ <span className="text-green">{offer.price}</span>
+                    <p className="text-5xl md:text-6xl font-heading font-extrabold tracking-tight mt-1">
+                      <span className="text-white/40">R$</span> <span className="text-white">{offer.price}</span>
                       <span className="text-xl text-white/30 font-semibold">,00</span>
                     </p>
-                    <p className="text-white/20 text-xs mt-2 uppercase tracking-wider">pagamento único</p>
+                    <p className="text-red-500 text-xs mt-2 uppercase tracking-wider font-semibold">pagamento único</p>
                   </div>
 
+                  {/* Vacancy progress */}
+                  <ProgressBar percent={hero.vacancyPercent} />
+
                   {/* CTA */}
-                  <Button glow className="w-full max-w-md text-lg !py-5">
+                  <Button glow className="w-full max-w-md text-lg !py-5" onClick={onCtaClick}>
                     {offer.cta}
                   </Button>
 

@@ -105,7 +105,7 @@ export default function Opportunity() {
             <div className="h-px bg-gradient-to-r from-transparent via-white/8 to-transparent" />
             <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bg-base px-5">
               <span className="text-accent text-xs font-medium tracking-wide whitespace-nowrap">
-                Onde entram os canais anônimos?
+                Onde entram os Canais Anônimos?
               </span>
             </div>
           </div>
@@ -130,9 +130,12 @@ export default function Opportunity() {
 
         {/* Closing */}
         <ScrollReveal>
-          <div className="text-center">
-            <p className="text-base md:text-xl text-white/40 mb-8 max-w-2xl mx-auto leading-relaxed">
-              {opportunity.subheadline}
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl font-heading font-medium text-white/70 mb-2 leading-snug">
+              {opportunity.subheadline1}
+            </p>
+            <p className="text-xl md:text-2xl font-heading font-bold text-accent mb-10">
+              {opportunity.subheadline2}
             </p>
             <Button glow scrollTo="schedule">{hero.cta}</Button>
           </div>

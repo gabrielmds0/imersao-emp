@@ -20,7 +20,7 @@ export default function Schedule() {
           <h2 className="text-2xl md:text-4xl font-heading font-bold text-white text-center mb-3 tracking-tight">
             {schedule.headline}
           </h2>
-          <p className="text-white/30 text-center mb-14 md:mb-16">3 dias que podem mudar a trajetória do seu negócio</p>
+          <p className="text-white/30 text-center mb-14 md:mb-16">{schedule.subheadline}</p>
         </ScrollReveal>
 
         {/* Days - stacked cards */}
