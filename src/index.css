@@ -54,6 +54,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Safari iOS: remove 300ms tap delay on interactive elements */
+button, a, [role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: var(--font-body);
   background: #050508;
@@ -163,6 +169,7 @@ html {
 .glass-card {
   background: linear-gradient(135deg, #ffffff06 0%, #ffffff02 100%);
   border: 1px solid #ffffff0a;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
 .glass-card:hover {
