@@ -24,7 +24,10 @@ export default function Hero() {
             <img
               src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
               alt="Cassiano Girardi"
-              className="relative h-full w-auto max-w-none object-contain object-bottom drop-shadow-[0_0_60px_rgba(67,97,238,0.12)]"
+              loading="eager"
+              fetchPriority="high"
+              style={{ height: '100%', width: 'auto', maxWidth: 'none', objectFit: 'contain', objectPosition: 'bottom' }}
+              className="relative drop-shadow-[0_0_60px_rgba(67,97,238,0.12)]"
             />
             {/* Bottom fade */}
             <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-base to-transparent" />
@@ -112,7 +115,10 @@ export default function Hero() {
           <img
             src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
             alt="Cassiano Girardi"
-            className="absolute bottom-0 right-[calc(5%-15px)] h-[92%] w-auto max-w-none object-contain object-bottom drop-shadow-[0_0_80px_rgba(67,97,238,0.15)]"
+            loading="eager"
+            fetchPriority="high"
+            style={{ height: '92%', width: 'auto', maxWidth: 'none', objectFit: 'contain', objectPosition: 'bottom' }}
+            className="absolute bottom-0 right-[calc(5%-15px)] drop-shadow-[0_0_80px_rgba(67,97,238,0.15)]"
           />
         </div>
 

@@ -23,6 +23,17 @@
   font-display: swap;
 }
 
+/* Reset WP theme interference */
+#root img {
+  max-width: none !important;
+  height: auto;
+}
+#root *,
+#root *::before,
+#root *::after {
+  box-sizing: border-box;
+}
+
 @theme {
   --color-base: #050508;
   --color-surface: #0a0a0f;
