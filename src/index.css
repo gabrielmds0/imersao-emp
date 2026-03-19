@@ -28,6 +28,14 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Hero image — immune to any external CSS override */
+.hero-img {
+  width: auto !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: bottom !important;
+}
+
 /* Reset WP theme interference */
 #root *,
 #root *::before,

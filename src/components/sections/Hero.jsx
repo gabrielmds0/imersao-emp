@@ -18,19 +18,14 @@ export default function Hero() {
 
         {/* Mobile: Cassiano image at top */}
         <div className="lg:hidden relative w-full pt-20 flex justify-center">
-          <div className="relative h-[340px] w-full flex justify-center">
+          <div className="relative h-[340px] w-full flex justify-center overflow-hidden">
             {/* Glow behind */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-accent/8 rounded-full blur-[80px]" />
-            <div
-              role="img"
-              aria-label="Cassiano Girardi"
-              className="relative w-full h-full drop-shadow-[0_0_60px_rgba(67,97,238,0.12)]"
-              style={{
-                backgroundImage: `url(${import.meta.env.BASE_URL}cassiano-palestra-azul.webp)`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'bottom center',
-                backgroundRepeat: 'no-repeat',
-              }}
+            <img
+              src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
+              alt="Cassiano Girardi"
+              loading="eager"
+              className="hero-img relative h-full drop-shadow-[0_0_60px_rgba(67,97,238,0.12)]"
             />
             {/* Bottom fade */}
             <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-base to-transparent" />
@@ -115,16 +110,13 @@ export default function Hero() {
         {/* Desktop: Cassiano image */}
         <div className="hidden lg:block absolute right-0 bottom-0 top-0 w-1/2 pointer-events-none z-[5]">
           <div className="absolute -inset-12 bg-gradient-to-tr from-accent/10 via-transparent to-gold/8 rounded-full blur-[100px]" />
-          <div
-            role="img"
-            aria-label="Cassiano Girardi"
-            className="absolute bottom-0 right-[calc(5%-15px)] w-full drop-shadow-[0_0_80px_rgba(67,97,238,0.15)]"
+          <img
+            src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
+            alt="Cassiano Girardi"
+            loading="eager"
+            className="hero-img absolute bottom-0 right-[calc(5%-15px)] drop-shadow-[0_0_80px_rgba(67,97,238,0.15)]"
             style={{
               height: '92%',
-              backgroundImage: `url(${import.meta.env.BASE_URL}cassiano-palestra-azul.webp)`,
-              backgroundSize: 'contain',
-              backgroundPosition: 'bottom right',
-              backgroundRepeat: 'no-repeat',
             }}
           />
         </div>
