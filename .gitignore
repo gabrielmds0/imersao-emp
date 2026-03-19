@@ -30,7 +30,7 @@ npm-debug.log*
 .claude/
 
 # Project data & references (local only)
-data/
+/data/
 referencias/
 
 # Source images (originals kept in assets/)

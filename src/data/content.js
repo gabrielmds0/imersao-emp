@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL
+
 export const KIWIFY_URL = 'https://pay.kiwify.com.br/lB4Bg9c'
 
 export const hero = {
@@ -76,7 +78,7 @@ export const schedule = {
       date: 'Terça, 24/03 às 19h',
       title: 'O Modelo de Negócio',
       color: 'primary',
-      image: '/dia1.webp',
+      image: `${base}dia1.webp`,
       items: [
         'O que é esse modelo e por que ele é um dos mais inteligentes para gerar receita no YouTube hoje.',
         'Como escolher o nicho certo usando dados, e não intuição.',
@@ -88,7 +90,7 @@ export const schedule = {
       date: 'Quarta, 25/03 às 19h',
       title: 'A Construção',
       color: 'accent',
-      image: '/cassiano-gui-office.webp',
+      image: `${base}cassiano-gui-office.webp`,
       imagePosition: 'center 30%',
       items: [
         'Os erros que reprovam canais na monetização e como evitá-los.',
@@ -99,7 +101,7 @@ export const schedule = {
       date: 'Quinta, 26/03 às 19h',
       title: 'Escala e Blindagem',
       color: 'success',
-      image: '/dia3.webp',
+      image: `${base}dia3.webp`,
       items: [
         'Como construir múltiplos ativos digitais.',
         'Como montar um pequeno time que executa sem depender de você.',
@@ -112,7 +114,7 @@ export const schedule = {
 
 export const bio = {
   name: 'Cassiano Girardi',
-  image: '/cassiano-montagem.webp',
+  image: `${base}cassiano-montagem.webp`,
   stats: [
     { value: 8, prefix: '+', label: 'anos de experiência' },
     { value: 30, prefix: '+R$', suffix: 'M', label: 'faturados' },
@@ -133,10 +135,10 @@ export const results = {
   subheadline1: 'A Channels Educação possui mais de 21.000 alunos.',
   subheadline2: 'E você pode ser o próximo a ter resultados como esse.',
   items: [
-    { name: 'Tiago S.', value: 'R$ 42.954,02', image: '/01-resultado-resultado-tiago.webp' },
-    { name: 'Vinicius', value: 'R$ 54 mil', image: '/02-resultado-resultado-vinicius.webp' },
-    { name: 'Andre', value: '', image: '/03-resultado-resultado-andre.webp' },
-    { name: 'Lucas', value: '', image: '/04-resultado-resultado-lucas.webp' },
+    { name: 'Tiago S.', value: 'R$ 42.954,02', image: `${base}01-resultado-resultado-tiago.webp` },
+    { name: 'Vinicius', value: 'R$ 54 mil', image: `${base}02-resultado-resultado-vinicius.webp` },
+    { name: 'Andre', value: '', image: `${base}03-resultado-resultado-andre.webp` },
+    { name: 'Lucas', value: '', image: `${base}04-resultado-resultado-lucas.webp` },
   ],
 }
 

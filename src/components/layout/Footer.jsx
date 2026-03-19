@@ -7,7 +7,7 @@ export default function Footer() {
           {/* Logo */}
           <div>
             <img
-              src="/Logo-channels-Educacao.webp"
+              src={`${import.meta.env.BASE_URL}Logo-channels-Educacao.webp`}
               alt="Channels Educação"
               className="max-h-12 w-auto object-contain mb-2"
             />
@@ -25,7 +25,7 @@ export default function Footer() {
           <div>
             <p className="text-white text-sm font-medium mb-3">Site 100% seguro</p>
             <img
-              src="/Selos-de-seguranca.webp"
+              src={`${import.meta.env.BASE_URL}Selos-de-seguranca.webp`}
               alt="Selos de segurança - Google Safe Browsing, SiteLock, CodeGuard"
               className="h-12 w-auto"
             />
@@ -61,7 +61,7 @@ export default function Footer() {
               </div>
             </div>
             <img
-              src="/Selos-de-pagamento.webp"
+              src={`${import.meta.env.BASE_URL}Selos-de-pagamento.webp`}
               alt="Formas de pagamento - Visa, Mastercard, Elo, Hipercard, American Express, Diners, Pix"
               className="h-14 w-auto"
             />

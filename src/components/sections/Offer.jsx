@@ -33,7 +33,7 @@ export default function Offer({ onCtaClick }) {
                   <div className="absolute bottom-6 right-6 w-12 h-12 border border-accent/[0.06] rounded-lg rotate-12" />
 
                   <img
-                    src="/ticket.webp"
+                    src={`${import.meta.env.BASE_URL}ticket.webp`}
                     alt="Ticket - Imersão para Empresários"
                     className="w-full max-w-[280px] md:max-w-[300px] drop-shadow-[0_12px_40px_rgba(67,97,238,0.2)] hover:scale-[1.02] transition-transform duration-500"
                     loading="lazy"

@@ -22,7 +22,7 @@ export default function Hero() {
             {/* Glow behind */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-accent/8 rounded-full blur-[80px]" />
             <img
-              src="/cassiano-palestra-azul.webp"
+              src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
               alt="Cassiano Girardi"
               className="relative h-full w-auto max-w-none object-contain object-bottom drop-shadow-[0_0_60px_rgba(67,97,238,0.12)]"
             />
@@ -110,7 +110,7 @@ export default function Hero() {
         <div className="hidden lg:block absolute right-0 bottom-0 top-0 w-1/2 pointer-events-none z-[5]">
           <div className="absolute -inset-12 bg-gradient-to-tr from-accent/10 via-transparent to-gold/8 rounded-full blur-[100px]" />
           <img
-            src="/cassiano-palestra-azul.webp"
+            src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
             alt="Cassiano Girardi"
             className="absolute bottom-0 right-[calc(5%-15px)] h-[92%] w-auto max-w-none object-contain object-bottom drop-shadow-[0_0_80px_rgba(67,97,238,0.15)]"
           />
