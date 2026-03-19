@@ -250,14 +250,108 @@ Imagens usadas:
 
 ---
 
+## Como clonar e rodar o projeto localmente
+
+### Pré-requisitos
+
+1. Instale o **Node.js** (versão 18 ou superior): https://nodejs.org
+2. Instale o **Git**: https://git-scm.com/downloads
+3. Tenha uma conta no **GitHub** com acesso ao repositório
+
+### Passo a passo
+
+#### 1. Clone o repositório
+
+Abra o terminal (CMD, PowerShell ou terminal do VS Code / Antigravity) e rode:
+
+```bash
+git clone https://github.com/gabrielmds0/imersao-emp.git
+```
+
+#### 2. Entre na pasta do projeto
+
+```bash
+cd imersao-emp
+```
+
+#### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+#### 4. Rode o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+O terminal vai mostrar algo como:
+
+```
+Local: http://localhost:5173/imersao-pra-empresarios/
+```
+
+Abra esse link no navegador para ver a página rodando localmente. Qualquer alteração que você salvar nos arquivos será refletida automaticamente no navegador.
+
+#### 5. Para parar o servidor
+
+Pressione `Ctrl + C` no terminal.
+
+---
+
+## Usando o Antigravity (editor de código)
+
+1. Abra o **Antigravity**
+2. Vá em **File → Open Folder** e selecione a pasta `imersao-emp` que foi clonada
+3. Na barra lateral esquerda, navegue até `src/data/content.js` e clique para abrir
+4. Faça as alterações desejadas nos textos
+5. Salve o arquivo (`Ctrl + S`)
+6. Se o servidor de desenvolvimento estiver rodando (`npm run dev`), as alterações aparecem automaticamente no navegador
+
+---
+
+## Comandos NPM úteis
+
+| Comando | O que faz |
+|---------|-----------|
+| `npm install` | Instala todas as dependências do projeto (rodar 1x após clonar) |
+| `npm run dev` | Inicia o servidor local de desenvolvimento |
+| `npm run build` | Gera os arquivos otimizados para produção (pasta `dist/`) |
+| `npm run preview` | Visualiza localmente o build de produção |
+
+---
+
 ## Deploy
 
 O deploy é automático. Ao fazer `git push` na branch `main`, a Vercel detecta e publica em poucos minutos.
+
+### Fluxo completo após editar:
 
 ```bash
 git add src/data/content.js
 git commit -m "atualiza textos da página"
 git push
+```
+
+Se você editou outros arquivos além do `content.js`:
+
+```bash
+git add .
+git commit -m "descrição do que foi alterado"
+git push
+```
+
+### Verificar o status antes de commitar:
+
+```bash
+git status
+```
+
+### Ver o que foi alterado:
+
+```bash
+git diff
 ```
 
 URL de produção: configurada no painel da Vercel.
