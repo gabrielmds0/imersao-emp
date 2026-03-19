@@ -23,11 +23,7 @@
   font-display: swap;
 }
 
-/* Reset WP theme interference */
-#root img {
-  max-width: none !important;
-  height: auto;
-}
+/* Reset WP theme interference — only on hero images */
 #root *,
 #root *::before,
 #root *::after {
