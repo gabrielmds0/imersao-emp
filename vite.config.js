@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/imersao-pra-empresarios/',
+  base: '/imersao-para-empresarios-v3/',
   plugins: [
     react(),
     tailwindcss(),

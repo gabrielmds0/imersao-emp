@@ -3,21 +3,21 @@
 /* Helvetica Now Display - Headings */
 @font-face {
   font-family: 'Helvetica Now Display';
-  src: url('/imersao-pra-empresarios/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2');
+  src: url('/imersao-para-empresarios-v3/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helvetica Now Display';
-  src: url('/imersao-pra-empresarios/fonts/HelveticaNowDisplay-Bold.woff2') format('woff2');
+  src: url('/imersao-para-empresarios-v3/fonts/HelveticaNowDisplay-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helvetica Now Display';
-  src: url('/imersao-pra-empresarios/fonts/HelveticaNowDisplay-ExtraBold.woff2') format('woff2');
+  src: url('/imersao-para-empresarios-v3/fonts/HelveticaNowDisplay-ExtraBold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
