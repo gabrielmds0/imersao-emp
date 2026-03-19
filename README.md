@@ -258,17 +258,42 @@ Imagens usadas:
 2. Instale o **Git**: https://git-scm.com/downloads
 3. Tenha uma conta no **GitHub** com acesso ao repositório
 
+### O que é "clonar"?
+
+Clonar significa **baixar uma cópia completa do projeto** do GitHub para o seu computador. Isso cria uma pasta no seu PC com todos os arquivos do projeto, permitindo que você edite localmente e depois envie as alterações de volta.
+
 ### Passo a passo
 
-#### 1. Clone o repositório
+#### 1. Crie uma pasta para seus projetos
 
-Abra o terminal (CMD, PowerShell ou terminal do VS Code / Antigravity) e rode:
+Antes de clonar, escolha um local no seu computador para guardar o projeto. Exemplo:
+
+- Windows: `C:\Projetos\`
+- Mac: `~/Projetos/`
+
+No terminal, navegue até essa pasta (ou crie se não existir):
+
+```bash
+# Windows
+mkdir C:\Projetos
+cd C:\Projetos
+
+# Mac / Linux
+mkdir ~/Projetos
+cd ~/Projetos
+```
+
+#### 2. Clone o repositório
+
+Ainda no terminal, dentro da pasta que você criou, rode:
 
 ```bash
 git clone https://github.com/gabrielmds0/imersao-emp.git
 ```
 
-#### 2. Entre na pasta do projeto
+Isso vai criar uma pasta chamada `imersao-emp` dentro de `Projetos`, com todos os arquivos do projeto.
+
+#### 3. Entre na pasta do projeto
 
 ```bash
 cd imersao-emp
