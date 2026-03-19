@@ -23,11 +23,19 @@
   font-display: swap;
 }
 
-/* Reset WP theme interference — only on hero images */
+/* Reset WP theme interference */
 #root *,
 #root *::before,
 #root *::after {
   box-sizing: border-box;
+}
+/* Hero images must not be constrained by WP themes */
+img[data-hero-img] {
+  max-width: none !important;
+  width: auto !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: bottom !important;
 }
 
 @theme {

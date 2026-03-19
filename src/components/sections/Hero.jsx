@@ -24,6 +24,7 @@ export default function Hero() {
             <img
               src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
               alt="Cassiano Girardi"
+              data-hero-img=""
               loading="eager"
               fetchPriority="high"
               style={{ height: '100%', width: 'auto', maxWidth: 'none', objectFit: 'contain', objectPosition: 'bottom' }}
@@ -115,6 +116,7 @@ export default function Hero() {
           <img
             src={`${import.meta.env.BASE_URL}cassiano-palestra-azul.webp`}
             alt="Cassiano Girardi"
+            data-hero-img=""
             loading="eager"
             fetchPriority="high"
             style={{ height: '92%', width: 'auto', maxWidth: 'none', objectFit: 'contain', objectPosition: 'bottom' }}
